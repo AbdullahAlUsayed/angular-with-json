@@ -1,0 +1,38 @@
+<h1 mat-dialog-title>Student Information</h1>
+<div mat-dialog-content></div>
+ <form [formGroup]="studentForm">
+  <p>
+    <mat-form-field  appearance="outline">
+      <mat-label>Name</mat-label>
+      <input formControlName="name" matInput placeholder="Type your name">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label>Age</mat-label>
+      <input formControlName="age" matInput placeholder="Type your age">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label>Mobile</mat-label>
+      <input formControlName="number" matInput placeholder="Type your contact number">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="fill">
+        <mat-label>Select gender</mat-label>
+        <mat-select formControlName="gender">
+          <mat-option value="male">Male</mat-option>
+          <mat-option value="female">Female</mat-option>
+        </mat-select>
+      </mat-form-field>
+  </p>
+ </form>
+  <div mat-dialog-actions [align]="'end'">
+    <button mat-button color="warn" mat-dialog-close>Close</button>
+    <button style="margin-left: 8px;" mat-button color="primary" mat-dialog-close (click)="addStudent()">{{actionBtn}}</button>
+  </div>

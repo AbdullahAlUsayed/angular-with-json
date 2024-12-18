@@ -1,0 +1,49 @@
+{
+  "studentList": [
+    {
+      "name": "usayed",
+      "age": "24",
+      "number": "214454",
+      "gender": "male",
+      "id": 1
+    },
+    {
+      "name": "Usayed",
+      "age": "25",
+      "number": "123456789",
+      "gender": "male",
+      "id": 2
+    },
+    {
+      "name": "Abdullah",
+      "age": "25",
+      "number": "354657687453625412",
+      "gender": "male",
+      "id": 3
+    },
+    {
+      "name": "usayed",
+      "age": "24",
+      "number": "214454",
+      "gender": "male",
+      "id": 4
+    },
+    {
+      "name": "Usayed",
+      "age": "26",
+      "number": "123456789",
+      "gender": "male",
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
